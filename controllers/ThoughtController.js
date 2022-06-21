@@ -4,10 +4,10 @@ module.exports = {
     getThoughts(req, res) {
         Thought.find()
             .then(async (thought) => {
-                const thoughtObj = {
+                const thoughtData = {
                     thought,
                 };
-                return res.json(thoughtObj);
+                return res.json(thoughtData);
             })
             .catch((err) => {
                 console.log(err);

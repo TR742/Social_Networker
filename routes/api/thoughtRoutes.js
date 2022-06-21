@@ -10,7 +10,6 @@ const {
 
 } = require('../../controllers/ThoughtController');
 
-// /api/students
 router.route('/').get(getThoughts).post(createThought);
 router.route('/:thoughtId').get(getSingleThought).put(updateThought).delete(deleteThought);
 router.route('/:thoughtId/reactions').post(createReaction);
