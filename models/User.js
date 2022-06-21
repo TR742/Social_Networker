@@ -55,7 +55,7 @@ User.find({}).exec((err, collection) => {
                 },
             ],
             (insertError) =>
-                insertError ? handleError(insertError) : console.log('Inserted')
+                insertError ? handleError(insertError) : console.log('The Users have been added to the database')
         );
     }
     return console.log('Already populated');

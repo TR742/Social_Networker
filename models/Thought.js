@@ -78,10 +78,10 @@ Thought.find({}).exec((err, collection) => {
                 },
             ],
             (insertError) =>
-                insertError ? handleError(insertError) : console.log('Created!')
+                insertError ? handleError(insertError) : console.log('The thoughts have been added to the database')
         );
     }
-    return console.log('Already populated');
+    return console.log('Duplicate thoughts not added, original still there');
 });
 
 module.exports = Thought, Reaction;
